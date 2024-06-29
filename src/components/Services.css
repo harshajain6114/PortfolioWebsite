@@ -1,0 +1,48 @@
+.services-container {
+  background-color: #0d1b2a;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.services-heading {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust gap between items */
+  padding-top: 10px; /* Reduce top padding */
+}
+
+.feature {
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.feature:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 200px; /* Adjust image size as needed */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the images */
+}
+
+.feature h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #ccc;
+}
+
+
+  

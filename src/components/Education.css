@@ -1,0 +1,157 @@
+/* Education.css */
+.education-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+  z-index: 0;
+}
+
+.education-content {
+  flex: 1;
+  z-index: 1;
+}
+
+.education-heading {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #ffcc00; /* Gold color for the heading */
+  position: relative;
+}
+
+.education-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: #ffcc00;
+  margin: 10px 0 0;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.timeline {
+  margin-top: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+  transform: scale(1.05);
+}
+
+.timeline-year {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-right: 20px;
+}
+
+.timeline-details h3 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.timeline-details p {
+  font-size: 1.2em;
+  margin: 5px 0 0;
+}
+
+.education-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: float 5s ease-in-out infinite;
+}
+
+.education-image img {
+  border-radius: 50%;
+  width: 80%;
+  max-width: 300px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.7); /* Add a gold shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-image img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .education-image {
+    margin-top: 20px;
+  }
+
+  .education-image img {
+    width: 60%;
+  }
+
+  .timeline-year {
+    font-size: 1.5em;
+  }
+
+  .timeline-details h3 {
+    font-size: 1.3em;
+  }
+
+  .timeline-details p {
+    font-size: 1em;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.timeline-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.timeline-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+  

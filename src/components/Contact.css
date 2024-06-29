@@ -1,0 +1,70 @@
+/* Contact.css */
+
+.contact-page {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 60px; /* Adjust based on the height of your navbar */
+  background-color: #0d1b2a;
+}
+
+.contact-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: #f1f1f1;
+  border: 1px solid darkblue;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.contact-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.contact-card p {
+  font-size: 1.2em;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card i {
+  margin-right: 10px;
+  color: darkblue; /* You can change this color as per your preference */
+}
+
+.contact-card a {
+  color: black; /* Default color for links */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.contact-card a.email-link:hover {
+  color: blue; /* Change to blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer {
+  background-color: #f1f1f1;
+  border-top: 1px solid darkblue;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
